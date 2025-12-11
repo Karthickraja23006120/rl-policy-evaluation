@@ -12,7 +12,6 @@ To find best policy from two policies which are defined by user using policy eva
 ```
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
     prev_V = np.zeros(len(P), dtype=np.float64)
-    # Write your code here to evaluate the given policy
     while True:
       V = np.zeros(len(P))
       for s in range(len(P)):
